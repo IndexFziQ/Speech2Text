@@ -8,6 +8,7 @@ import numpy as np
 import json
 import ast
 
+# Demonstration
 # input_path = '/Users/xyqiang/Downloads/weblfasr_python3_demo/raw_data.txt'
 # output_path = '/Users/xyqiang/Downloads/weblfasr_python3_demo/result.txt'
 input_path = 'your_file_path_of_input'
@@ -20,16 +21,10 @@ for line in lines:
     item = line.replace("\n", "").split("/getResult success:")[1]
     item = item.split("'[")[1]
     item = item.split("]'")[0]
-    # print(item[:16])
-    # print(item[-17:])
-    # print(type(item))
     user_dicts = ast.literal_eval(item)
     for user_dict in user_dicts:
         all_data_so.append(user_dict['onebest'])
 
-# print(len(all_data_so))
-# item = all_data_so[1]
-# print(item)
 with open(output_path, 'w') as f2:
     f2.writelines(all_data_so)
 
