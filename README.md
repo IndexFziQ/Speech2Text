@@ -9,7 +9,7 @@
 4. run 'python read_raw_data_xunfei.py', 生成最终的txt文件。
 
 ## 更新日志:
-可直接运行run 'python weblfasr_python3_demo.py，得到raw_data.txt文件，存到当前目录
+2021/12/17: 可直接运行run 'python weblfasr_python3_demo.py，得到raw_data.txt文件，存到当前目录
 
 ## 注意：
 **讯飞开放平台的appid，secret_key，如下所示：**
