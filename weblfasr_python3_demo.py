@@ -194,14 +194,21 @@ class RequestApi(object):
 
             # 每次获取进度间隔20S
             time.sleep(20)
+            
         # 5 . 获取结果
-        self.get_result_request(taskid=taskid)
-        print(self.get_result_request(taskid=taskid))
-
+        result = self.get_result_request(taskid=taskid)
+        return result
 
 
 # 注意：如果出现requests模块报错："NoneType" object has no attribute 'read', 请尝试将requests模块更新到2.20.0或以上版本(本demo测试版本为2.20.0)
 # 输入讯飞开放平台的appid，secret_key和待转写的文件路径
 if __name__ == '__main__':
-    api = RequestApi(appid="", secret_key="", upload_file_path=r"")
-    api.all_api_request()
+    api = RequestApi(
+        appid="",
+        secret_key="",
+        upload_file_path=r"")
+    result = api.all_api_request()
+    output_path = './raw_data.txt'
+
+    with open(output_path, 'w') as f:
+        f.write("/getResult success:"+ str(result))
