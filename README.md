@@ -11,3 +11,5 @@ Speech to Text with [Xue Fei API](https://www.xfyun.cn/).
 3. run 'python weblfasr_python3_demo.py > nohup.out', 复制nohup.out生成的结果中(/getResult success:{'data': --- })，得到raw_data.txt文件，存到当前目录
 4. run 'python read_raw_data_xunfei.py', 生成最终的txt文件。
 
+讯飞开放平台的appid，secret_key，如下所示：
+![avatar](./demo.png)
