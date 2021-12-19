@@ -9,10 +9,8 @@ import json
 import ast
 
 # Demonstration
-# input_path = '/Users/xyqiang/Downloads/weblfasr_python3_demo/raw_data.txt'
-# output_path = '/Users/xyqiang/Downloads/weblfasr_python3_demo/result.txt'
-input_path = 'your_file_path_of_input'
-output_path = 'your_file_path_of_output'
+input_path = './raw_data.txt'
+output_path = './result.txt'
 
 f1= open(input_path)
 lines = f1.readlines()
