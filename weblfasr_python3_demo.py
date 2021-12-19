@@ -208,7 +208,9 @@ if __name__ == '__main__':
         secret_key="",
         upload_file_path=r"")
     result = api.all_api_request()
+    
     output_path = './raw_data.txt'
-
     with open(output_path, 'w') as f:
         f.write("/getResult success:"+ str(result))
+    
+    f.close()
