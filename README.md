@@ -1,6 +1,6 @@
 # Speech2Text
 
-使用 [Xue Fei API](https://www.xfyun.cn/) 进行语音转写，适用于将上课、会议录音内容转写成文本，进行课堂笔记、文档的撰写。
+使用 [Xun Fei API](https://www.xfyun.cn/) 进行语音转写，适用于将上课、会议录音内容转写成文本，进行课堂笔记、文档的撰写。
 
 ## 运行步骤:
 1. 申请讯飞开放平台的免费资源（一般是5个小时，超过就需要购买），[语音转写服务](https://www.xfyun.cn/services/lfasr)
